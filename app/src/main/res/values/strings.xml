@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">double_blackjack2</string>
+    <string name="player_card_label">Player Card 1</string>
+</resources>

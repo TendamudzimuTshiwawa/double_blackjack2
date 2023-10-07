@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <!-- Player's Hand Layout -->
+        <LinearLayout
+            android:id="@+id/playerHandLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- Player's Cards (ImageViews) -->
+            <ImageView
+                android:id="@+id/playerCard1"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:src="@drawable/card_back"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Player Card 1" />
+
+            <!-- Add more ImageViews for additional player cards -->
+
+        </LinearLayout>
+
+        <!-- Dealer's Hand Layout -->
+        <LinearLayout
+            android:id="@+id/dealerHandLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- Dealer's Cards (ImageViews) -->
+            <ImageView
+                android:id="@+id/dealerCard1"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:src="@drawable/card_back"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Dealer Card 1" />
+
+            <!-- Add more ImageViews for additional dealer cards -->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Player Score TextView -->
+    <TextView
+        android:id="@+id/playerScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player Score: 0"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <!-- Dealer Score TextView -->
+
+    <TextView
+        android:id="@+id/dealerScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dealer Score: 0"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <!-- Result TextView -->
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp" />
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="32dp">
+
+        <Button
+            android:id="@+id/hitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hit" />
+
+        <Button
+            android:id="@+id/standButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stand"
+            android:layout_marginStart="16dp" />
+
+        <Button
+            android:id="@+id/playAgainButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play Again"
+            android:layout_marginStart="16dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>
