@@ -43,4 +43,4 @@ To use the card game, you can integrate this code into your Android project. Mak
 
 If you encounter any specific issues or have further questions about specific parts of the code, please feel free to send an email. 
 
-Declaration: I used Chatgpt for some of the code, especialy the MainActivity file and the xml file. 
+Declaration: I used Chatgpt to edit some of the code, especialy the MainActivity file and the xml file. 
